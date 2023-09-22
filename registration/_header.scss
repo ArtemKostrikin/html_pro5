@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background: #222222;
+
+    &_left {
+        @include flex_center (41px);
+    }
+
+    &_right {
+        @include flex_center (33px);
+    }
+  }

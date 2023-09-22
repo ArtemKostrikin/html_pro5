@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:wght@300;400;700;900&display=swap");
+@import "vars";
+@import "mixins";
+@import "header";
+@import "top-head";
+@import "index";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.center {
+  padding-left: calc(50% - $widthContent / 2);
+  padding-right: calc(50% - $widthContent / 2);
+}
+
+@media (max-width: 1139px) {
+  .header_left {
+    padding-left: 32px;
+  }
+
+  .header_right {
+    padding-right: 41px;
+  }
+
+  .top-head_heading {
+    padding-left: 16px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .info {
+    width: 354px;
+    height: 337px;
+
+    &_text {
+      color: #000;
+      font-family: Lato;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+
+      &__big {
+        width: 354px;
+      }
+    }
+
+    &_subtitle {
+      color: #000;
+      font-family: Lato;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+    }
+  }
+
+  .bot_content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bot_contentright {
+    padding-top: 48px;
+  }
+
+  .bot_contentright {
+    padding-left: 0;
+  }
+
+
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .icon__delete {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+
+    .header_image {
+      display: none;
+    }
+  
+    .header__left {
+      padding-left: 16px;
+    }
+  
+    .header__right {
+      padding-right: 16px;
+    }
+  
+    .top-head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .top-head__heading {
+      padding-bottom: 32px;
+    }
+  
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item_content_button {
+        margin-bottom: 40px;
+    }
+
+    .bot_content_text{
+        color: #222224;
+        text-align: center;
+        font-family: Lato;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .bot_content_heading {
+        color: #222224;
+text-align: center;
+font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+  
+    .footer {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .footerright {
+      padding-bottom: 25px;
+    }
+  }
